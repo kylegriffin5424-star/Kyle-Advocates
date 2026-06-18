@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         CONSULTATION PAGE SEO
+
+         CHANGE:
+         - Page Title
+         - Meta Description
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Book a Consultation | Kyle Advocates | Kampala Uganda
+    </title>
+
+    <meta name="description"
+        content="Book a legal consultation with Kyle Advocates. Schedule a meeting with our experienced legal team.">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVIGATION BAR
+
+         KEEP THIS IDENTICAL ON ALL PAGES
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Kyle Advocates
+            </a>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="lawyers.html">Lawyers</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="pricing.html">Pricing</a></li>
+
+                <li><a href="consultation.html">Book Consultation</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- =====================================================
+         PAGE HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+        <div class="container hero-content fade-in">
+
+            <h1>Book a Consultation</h1>
+
+            <p>
+
+                Schedule a confidential consultation with
+                one of our experienced advocates.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         CONSULTATION INTRODUCTION
+    ====================================================== -->
+
+    <section>
+
+        <div class="container fade-in">
+
+            <div class="section-title">
+
+                <h2>Consultation Request Form</h2>
+
+            </div>
+
+            <p style="text-align:center; max-width:900px; margin:auto;">
+
+                Complete the form below and a member
+                of our team will contact you to confirm
+                your appointment.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         CONSULTATION FORM
+
+         FORM ID:
+         consultationForm
+
+         IMPORTANT FOR BEGINNERS
+
+         CURRENTLY:
+         Frontend Only
+
+         FUTURE BACKEND OPTIONS:
+
+         OPTION 1:
+         Formspree
+
+         Replace:
+         action="#"
+
+         With:
+         action="https://formspree.io/f/your-form-id"
+
+         OPTION 2:
+         PHP Backend
+
+         action="process-consultation.php"
+
+         OPTION 3:
+         Node.js Backend
+
+         action="/submit-consultation"
+
+    ====================================================== -->
+
+    <section>
+
+        <div class="container">
+
+            <form id="consultationForm"
+                action="#"
+                method="POST">
+
+                <!-- FULL NAME -->
+
+                <label for="fullName">
+
+                    Full Name *
+
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required>
+
+                <!-- EMAIL -->
+
+                <label for="email">
+
+                    Email Address *
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <!-- PHONE -->
+
+                <label for="phone">
+
+                    Phone Number *
+
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required>
+
+                <!-- SERVICE REQUIRED -->
+
+                <label for="service">
+
+                    Service Required *
+
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required>
+
+                    <option value="">
+                        Select a Legal Service
+                    </option>
+
+                    <option>
+                        Criminal Law
+                    </option>
+
+                    <option>
+                        Tax Law
+                    </option>
+
+                    <option>
+                        Family Law
+                    </option>
+
+                    <option>
+                        Corporate Law
+                    </option>
+
+                </select>
+
+                <!-- PREFERRED DATE -->
+
+                <label for="date">
+
+                    Preferred Date *
+
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required>
+
+                <!-- PREFERRED TIME -->
+
+                <label for="time">
+
+                    Preferred Time *
+
+                </label>
+
+                <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    required>
+
+                <!-- ADDITIONAL NOTES -->
+
+                <label for="notes">
+
+                    Additional Notes
+
+                </label>
+
+                <textarea
+                    id="notes"
+                    name="notes"
+                    placeholder="Provide any relevant information regarding your matter."></textarea>
+
+                <!-- SUBMIT BUTTON -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Submit Consultation Request
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         APPOINTMENT INFORMATION
+    ====================================================== -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="card-grid">
+
+                <div class="card fade-in">
+
+                    <div class="card-content">
+
+                        <h3>Confidential Consultation</h3>
+
+                        <p>
+
+                            All information shared with our
+                            advocates is treated with strict
+                            confidentiality.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card fade-in">
+
+                    <div class="card-content">
+
+                        <h3>Professional Advice</h3>
+
+                        <p>
+
+                            Receive guidance tailored to your
+                            legal situation and objectives.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="card fade-in">
+
+                    <div class="card-content">
+
+                        <h3>Flexible Scheduling</h3>
+
+                        <p>
+
+                            Request an appointment date and
+                            time that best suits your schedule.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         OPTIONAL SUCCESS MESSAGE
+
+         FOR FUTURE USE
+
+         Can be shown after successful submission.
+
+         Example:
+
+         Thank you for booking.
+         Our team will contact you shortly.
+
+    ====================================================== -->
+
+    <!--
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Thank You</h3>
+                    <p>
+                        Your consultation request has been received.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3 style="color:white;">
+                        Kyle Advocates
+                    </h3>
+
+                    <p>
+
+                        Justice, Integrity, and Excellence
+                        in Legal Representation.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3 style="color:white;">
+                        Quick Links
+                    </h3>
+
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="lawyers.html">Lawyers</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+
+                </div>
+
+                <div>
+
+                    <h3 style="color:white;">
+                        Office Location
+                    </h3>
+
+                    <p>
+
+                        Okello House<br>
+                        Kampala, Uganda
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3 style="color:white;">
+                        Working Hours
+                    </h3>
+
+                    <p>
+
+                        Monday – Friday<br>
+                        8:00 AM – 4:00 PM
+
+                    </p>
+
+                    <p>
+
+                        Saturday<br>
+                        10:00 AM – 1:00 PM
+
+                    </p>
+
+                    <p>
+
+                        Sunday: Closed
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:25px;">
+
+                <!-- REPLACE WITH ACTUAL LINKS -->
+
+                <a href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+
+                &nbsp;&nbsp;
+
+                <a href="#">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+
+                &nbsp;&nbsp;
+
+                <a href="#">
+                    <i class="fab fa-x-twitter fa-2x"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Kyle Advocates.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         WHATSAPP BUTTON
+
+         CHANGE:
+         YOUR_WHATSAPP_NUMBER
+
+         Example:
+         256700123456
+
+    ====================================================== -->
+
+    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER"
+        class="whatsapp"
+        target="_blank"
+        aria-label="WhatsApp">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

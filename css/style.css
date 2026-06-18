@@ -1,0 +1,455 @@
+/* =====================================================
+   KYLE ADVOCATES WEBSITE STYLESHEET
+   -----------------------------------------------------
+   This file controls:
+   - Colors
+   - Typography
+   - Layouts
+   - Animations
+   - Mobile responsiveness
+   - Cards
+   - Forms
+   - Footer
+
+   TO CHANGE BRAND COLORS:
+   Edit the variables below.
+===================================================== */
+
+:root{
+
+    /* ==========================================
+       MAIN BRAND COLORS
+       Change colors here if rebranding
+    ========================================== */
+
+    --primary:#0B1F3A;      /* Navy Blue */
+    --secondary:#C9A227;    /* Gold */
+    --white:#ffffff;
+    --light:#f8f9fa;
+    --gray:#6c757d;
+    --dark:#222;
+}
+
+/* ==========================================
+   GLOBAL RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    line-height:1.7;
+    color:var(--dark);
+    background:#fff;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================================
+   SECTION SPACING
+========================================== */
+
+section{
+    padding:80px 0;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,h2,h3,h4{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.3rem;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--primary);
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    color:white;
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+/* ==========================================
+   MENU LINKS
+========================================== */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+/* ==========================================
+   MOBILE MENU BUTTON
+========================================== */
+
+.hamburger{
+    display:none;
+    cursor:pointer;
+    color:white;
+    font-size:28px;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+    min-height:90vh;
+
+    /* ======================================
+       CHANGE HERO IMAGE HERE
+       Replace hero-bg.jpg in images folder
+    ====================================== */
+
+    background:
+    linear-gradient(
+    rgba(11,31,58,.8),
+    rgba(11,31,58,.8)),
+    url('../images/hero-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    color:white;
+    font-size:3.5rem;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin:20px 0;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:5px;
+    text-decoration:none;
+    transition:.3s;
+    margin:5px;
+}
+
+.btn-primary{
+    background:var(--secondary);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--primary);
+}
+
+/* ==========================================
+   STATISTICS SECTION
+========================================== */
+
+.stats{
+    background:var(--light);
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    text-align:center;
+}
+
+.stat-box{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.stat-box h3{
+    color:var(--secondary);
+    font-size:2.2rem;
+}
+
+/* ==========================================
+   SERVICES CARDS
+========================================== */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card-content{
+    padding:25px;
+}
+
+/* ==========================================
+   LAWYER CARDS
+========================================== */
+
+.lawyer-image{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+.testimonial{
+    background:white;
+    padding:30px;
+    border-left:5px solid var(--secondary);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   PRICING TABLE
+========================================== */
+
+.pricing-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.pricing-table th{
+    background:var(--primary);
+    color:white;
+}
+
+.pricing-table th,
+.pricing-table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+/* ==========================================
+   FORMS
+========================================== */
+
+form{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-top:8px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    min-height:150px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    background:var(--primary);
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    margin-top:30px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.2);
+    padding-top:20px;
+}
+
+/* ==========================================
+   WHATSAPP BUTTON
+========================================== */
+
+/*
+=====================================================
+CHANGE WHATSAPP NUMBER IN HTML FILES
+Search:
+YOUR_WHATSAPP_NUMBER
+
+Replace with:
+2567XXXXXXXX
+=====================================================
+*/
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:768px){
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:var(--primary);
+
+        flex-direction:column;
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+}
