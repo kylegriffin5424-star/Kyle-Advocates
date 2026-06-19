@@ -48,7 +48,7 @@ body{
     font-family:'Segoe UI',sans-serif;
     line-height:1.7;
     color:var(--dark);
-    background:#fff;
+    background:#828282;
 }
 
 /* ==========================================
@@ -91,6 +91,73 @@ h1,h2,h3,h4{
    NAVIGATION BAR
 ========================================== */
 
+/* ===============================
+   NAVIGATION LOGO
+================================= */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+/* Logo image */
+
+.logo-image{
+    width:60px;
+    height:60px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    transition:0.3s ease;
+}
+
+/* Logo hover effect */
+
+.logo:hover .logo-image{
+    transform:scale(1.05);
+}
+@media(max-width:768px){
+
+    .logo-image{
+        width:45px;
+        height:45px;
+    }
+
+    .logo-text{
+        font-size:1rem;
+    }
+
+}
+
+/* ===============================
+   FOOTER LOGO
+================================= */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.footer-logo img{
+    width:55px;
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+}
+/* Company name */
+
+.logo-text{
+    font-size:1.3rem;
+    font-weight:700;
+    color:#000;
+}
 .navbar{
     position:sticky;
     top:0;
